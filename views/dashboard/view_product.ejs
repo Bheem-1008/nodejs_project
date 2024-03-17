@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view_product</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <%- include ('./header.ejs') %>
+
+        <div class="container-fluid index">
+            <div class="h1">View Product</div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <%- include ('./left.ejs') %>
+                </div>
+                <div class="col">
+
+                    <% if(adddata.length>0){ %>
+                        <table class="table table-bordered border-black table-sm ">
+                            <thead>
+                                <tr>
+                                    <th>product Name</th>
+                                    <th>Product Price</th>
+                                    <th>Discount</th>
+                                    <th>Rating</th>
+                                    <th>Country Name</th>
+                                    <th>Update</th>
+                                    <th>image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(let i=0; i<adddata.length; i++){%>
+                                    <tr>
+                                        <td><%= adddata[i].productName %></td>
+                                        <td><%= adddata[i].ProductPrice %></td>
+                                        <td><%= adddata[i].discount %></td>
+                                        <td><%= adddata[i].rating %></td>
+                                        <td><%= adddata[i].Country%></td>
+                                        <td> <img src="<%= adddata[i].image %>" alt="h" height="100px"></td>
+                                        <td >
+                                           
+                                            <a class="edit" href="/edit/<%= adddata[i]._id %>" >Edit</a>
+                                            <a class="delete" href="/delete/<%= adddata[i]._id %>" >Delete</a>
+                                            
+                                        </td>
+                                    </tr>
+
+                                <% }%>
+                            </tbody>
+                        </table>   
+                        <% } else { %>
+                        
+                            no record found
+                        <%} %>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATEGORY</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+
+
+</head>
+
+<body>
+    <%- include ('./header.ejs') %>
+
+        <div class="container-fluid index">
+            <div class="h1">CATEGORY</div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <%- include ('./left.ejs') %>
+                </div>
+                <div class="col">
+
+                    <table class="table table-bordered border-black table-sm ">
+                        <tr >
+                            <th>S.no</th>
+                            <th>I'd</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                           
+                            
+                           
+                        </tr>
+
+                        <tr>
+                            <td>1.</td>
+                            <td>c-001</td>
+                            <td>Pizzas</td>
+                            <td>Upload Image</td>
+                          
+                        </tr>
+
+                        <tr>
+                            <td>2.</td>
+                            <td>c-002</td>
+                            <td>Pastas</td>
+                           
+                          
+                        </tr>
+
+                        <tr>
+                            <td>3.</td>
+                            <td>c-003</td>
+                            <td>Dosas</td>
+                            
+                            <!-- <td class="delete">
+                                <button class="edit">Edit</button>
+                                <a class="delete" href="">Delete</a>
+
+                            </td> -->
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

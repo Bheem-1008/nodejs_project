@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;    
+}
+body,html {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+.container-fluid {
+    background-color:#d8d8d8;
+    border: 1px solid rgb(255, 255, 255);
+}
+.all-box {
+    background: #ffffff;
+    height: 160px;
+    margin: 20px;
+}
+.all-box i {
+    position: relative;
+    top:60px;
+    left:-30px;
+    font-size:24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    background: #000000bf;
+    color:#fff;
+}
+.payment-box {
+    margin-top:90px;
+}
+.payment-text {
+    margin:10px;
+}
+.text {
+    margin: 20px;
+    padding-left: 50px;
+}
+.text p{
+    font-size:25px;
+    font-weight: 700;
+    height: 20px;
+}
+.text small {
+    color: gray;
+}
+.all-box-1 {
+    background: #ffffff;
+    height: 100px;
+    margin: 20px;
+}
+.all-box-1 i {
+    position: relative;
+    top:30px;
+    left:-30px;
+    font-size:24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    background: #000000bf;
+    color:#fff;
+}
+.text-1 {
+    padding-left: 50px;
+}
+.text-1 p{
+    font-size:20px;
+    font-weight: 700;
+    color: rgb(102, 101, 101);
+}
+.pay-prodeuct-box {
+    margin-top: 30px;
+    background: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+}
+.pay-prodeuct {
+    margin: 12px;
+}
+.image img{
+    height: 50px;
+    float: left;    
+}
+.image span {
+    font-weight: 600;
+    padding: 15px;
+}
+.image samp {
+    padding: 15px;
+    color: rgb(158, 158, 158);
+}
+.green-icon i {
+    border: 2px solid #009411;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    font-size: 6px;
+    padding: 3.2px;
+    color: #009411;
+}
+.green-icon abbr {
+    display:inline-block;
+    border:1px solid rgb(178, 175, 175);
+    height:26px;
+    width: 70px;
+    position: relative;
+    left:60px;
+    top:5px;
+    text-align: center;
+}
+.green-icon text{
+    float: right;
+}
+.bill {
+    margin-top: 30px;
+}
+.bill h4 {
+    font-size: 13px;
+    font-weight: 600;
+}
+.bill-pay span{
+    font-size: 13px;
+    float: left;
+    color: gray;
+}
+.bill-pay spa{
+    font-size: 13px;
+    float: right;
+    color: gray;
+}
+.to-pay {
+    display: flex;
+    justify-content: space-between;
+}
+.to-pay h3 {
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-box {
+    margin-top: 100px;
+    border-bottom: 1px dashed gray;
+    height: 170px;
+}
+
+.add-box small {
+    font-size: 10px;
+    color: #909090e3;
+    letter-spacing: 1.2px;
+}
+
+.text p {
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    font-size: 25px;
+    height: 17px;
+}
+
+.text span {
+    color: gray;
+    font-size: 12px;
+}
+
+.text label {
+    color: gray;
+    font-size: 13px;
+    margin-top: 8px;
+    letter-spacing: 1.1px;
+}
+
+.add-star {
+    border: 1px solid rgba(182, 179, 179, 0.851);
+    width: 90px;
+    height: 100px;
+}
+
+.add-star i {
+    padding: 12px 5px 0 20px;
+    font-size: 15px;
+    color: green;
+}
+
+.add-star small {
+    position: relative;
+    top: -14px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+}
+
+.delevrery-box {
+    border-bottom: 1px solid gray;
+    margin-top: 35px;
+}
+
+.delevrery-box p {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.green-icon i {
+    border: 2px solid #009411;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 9.4px;
+    padding: 3.2px;
+    color: #009411;
+
+}
+
+.green-icon p {
+    font-size: 14px;
+    height: 9px;
+}
+
+.green-icon b {
+    color: gray;
+    font-size: 14px;
+}
+
+.delevery-img img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.add-btn a {
+    border: 1px solid rgba(206, 206, 206, 0.79);
+    background: #ffffff;
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(0, 155, 0);
+    font-size: 16px;
+    position: relative;
+    top: -20px;
+    left: 35px;
+    cursor: pointer;
+}
+
+.add-btn a:hover {
+    background: #efefef;
+}
+
+/* modal */
+
+.modal-icon sp{
+    margin:10px;color:gray;
+}
+.radio {
+    margin-left:8px;
+}
+.modal-icon i{
+    border: 1px solid #009411;
+    height: 14px;
+    width: 14px;
+    text-align: center;
+    font-size: 5.5px;
+    padding: 4px;
+    color: #009411;position: relative;top:-5px;
+}
+
+.modal-icon span {
+    font-size: 19px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+
+.green-icon d {
+    font-size: 15px;
+    color: #9d9b9b;
+    position: relative;
+    left: 26px;
+}
+
+.modal-body p {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.input-text {
+    margin-inline: 40px;
+}
+.modal-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:600px) {
+    .text p {
+        font-size: 18px;
+    }
+
+    .add-btn a {
+        position: relative;
+
+        left: 15px
+    }
+}

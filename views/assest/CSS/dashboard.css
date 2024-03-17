@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* ******* Header ******** */
+.navbar {
+    background: rgba(40, 161, 40, 0.836);
+    height:70px;
+}
+.food {
+    color:white;
+    font-weight:600;
+    margin-left: 100px;
+    text-decoration: none;
+    font-size: 22px;
+}
+.logout {
+    background: rgb(255, 106, 0);  
+    border: none;
+    color:white;
+    margin-right:60px;
+    width: 100px;
+    height:33px;
+    border-radius:20px;    
+    font-weight:600;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+}
+
+/* ******* Header end ******** */
+
+/* left side button */
+
+.dash-button{
+    margin-left: 100px;
+    margin-top: 50px;
+    border-right:1px solid rgb(17, 144, 6);
+    width: 310px;
+    height: 400px;
+}
+
+.dash-icon a{
+    text-decoration: none;
+    color:black;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 1.2px;
+    border: 1px solid #000000;
+    display: inline-block;
+    width: 200px;
+    padding: 0px 29px;
+    border-radius:5px;
+    transition: all ease-in .5s;
+} 
+
+.dash-icon  a:hover {
+    background: #000;
+    color:#fff;
+}
+/*  **** left side   end */
+/* **** right side *** */
+
+.index{
+    margin-top: 150px;
+}
+.index .h1{
+    font-size:27px;
+    text-align:center; 
+    text-decoration:1px rgb(162, 88, 88) underline;
+    text-transform: capitalize;
+    color:green;
+}
+.emoji p{
+    font-size:170px;
+}
+
+table {
+    margin-top: 70px;
+}
+table th{
+    border:2px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size:20px;
+}
+table td{
+    border:2px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size: 19px;
+    font-weight: 450;
+    letter-spacing: 1.2px;
+
+}
+
+.edit {
+    display: inline-block;
+    width: 70px;
+    margin-right: 13px;
+    color: #fff;
+    background-color: #1ac200;
+    text-decoration: none   ;
+}
+.delete {
+    background: red;
+    display: inline-block;
+    width: 70px;   
+    color: #fff;
+    text-decoration: none;
+}
+form{
+    margin-top: 45px;
+}
+
+@media only screen and (max-width:600px){
+    /* For phone: */
+
+    .food {
+        margin-left:0px;
+    }
+    .logout {
+        margin-right:0px;
+    }
+
+    #box {
+        margin-top: 40px;
+    }
+    .about-text{
+        width: auto;
+    }
+    .dash-button{
+        margin-left: -30px;
+        border: none;
+        height: 250px;
+    }
+}

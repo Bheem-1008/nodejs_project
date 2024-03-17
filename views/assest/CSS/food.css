@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding: 0;
+}
+image {
+    height: 500px;
+}
+.text{
+    color:red;
+    font-size: 40px;
+}
+button {
+    background: #000;
+}

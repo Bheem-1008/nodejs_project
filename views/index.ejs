@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food online from india</title>
+    <link rel="stylesheet" href="assest/CSS/index.css">
+</head>
+
+<body>
+    <%- include('./common/header.ejs')%>
+
+        <!-- ******************* Banner section ********************* -->
+        <img src="./assest/img/banner.png" alt="" class="img-fluid banner">
+
+        <!--****************** delivery time *********** -->
+
+        <div class="container timing-box">
+            <div class="row">
+                <div class="col food-text">
+                    <div class="food-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <p>Mon-set(10 AM - 12 PM)</p>
+                    <span>Available Hours</span>
+                </div>
+                <div class="col food-text">
+                    <div class="food-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p>Dwarks sec-7 110045</p>
+                    <span>Our Location</span>
+                </div>
+                <div class="col food-text">
+                    <div class="food-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <p>+880 17893486791</p>
+                    <span>Call us</span>
+                </div>
+            </div>
+        </div>
+
+        <!--****************** delivery time  end *********** -->
+
+        <div class="patta">
+            <img src="./assest/img/patta (2).png" alt="">
+        </div>
+
+        <!--****************** scroll food items ************************** -->
+
+        <div class="container scroll-box">
+            <b>What's on your mind?</b>
+            
+            <% if(foodData.length>0){ %>
+            <div class="carousel-view">
+                <div id="item-list" class="item-list">
+
+                    <% for(let i=0; i<foodData.length; i++){%>
+
+                    <div class="img-text">
+                        <a href="/paratha">
+                            <img id="item" class="item" src="<%= foodData[i].photo%>">
+                            <p><%= foodData[i].name %></p>
+                        </a>
+                    </div>
+                    <% }%>
+                </div>
+            </div>
+            <% } else { %>
+
+                no record found
+                <%} %>
+        </div>
+
+        <!--****************** scroll food items end ************************** -->
+
+        <!--****************** best food items  ************************** -->
+        <div class="container besFood-box">
+            <span>179 restaurants to explore</span>
+
+            <% if(adddata.length>0){ %>
+                <div class="row row-cols-lg-4 row-cols-md-4">
+                    <% for(let i=0; i<adddata.length; i++){%>
+
+                        <div class="col-6 food-img-box">
+                            <a href="/readmore/<%=adddata[i]._id%>" class="food-img">
+
+                                <img src="<%= adddata[i].image %>" alt="" class="img-fluid">
+                                <div class="imt-text">
+                                    <%= adddata[i].discount %>
+                                </div>
+                                <p>
+                                    <%= adddata[i].productName %>
+                                </p>
+                                <b><i class="fa-solid fa-star"></i>
+                                    <%= adddata[i].rating %>
+                                </b>
+                                ₹<%= adddata[i].ProductPrice %><br>
+                                    <small>
+                                        <%= adddata[i].Country%>
+                                    </small>
+                            </a>
+                        </div>
+                        <% }%>
+                </div>
+                <% } else { %>
+
+                    no record found
+                    <%} %>
+        </div>
+        <!-- ************************  beast food end ******************* -->
+
+        <!-- ************************  our service ******************* -->
+
+        <div class="ser">
+            <img src="./assest/img/patta.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="container service-box">
+            <p>Our Services</p>
+            <span>Beatae exer dolorem nisi expedita repell sunt nemo vitae
+                molestiae eum ad</span>
+
+            <div class="row">
+                <div class="col service">
+                    <div class="service-img">
+                        <img src="./assest/img/sevice-img (1).png" alt="">
+                    </div>
+                    <p>Pick Meals</p>
+                    <label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi,
+                        labore
+                        consequatur error eum aperiam v.</label>
+                </div>
+                <div class="col service">
+                    <div class="service-img">
+                        <img src="./assest/img/sevice-img (2).png" alt="">
+                    </div>
+                    <p>Make Payment</p>
+                    <label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi,
+                        labore
+                        consequatur error eum aperiam v.</label>
+                </div>
+                <div class="col service">
+                    <div class="service-img">
+                        <img src="./assest/img/sevice-img (3).png" alt="">
+                    </div>
+                    <p>Fast Delivery</p>
+                    <label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi,
+                        labore
+                        consequatur error eum aperiam v.</label>
+                </div>
+
+            </div>
+        </div>
+        <!-- ************************  our service end******************* -->
+
+        <!-- chef -->
+
+        <div class="container chef-box">
+            <p>Our Special Chaf's</p>
+            <span>Beatae exer dolorem nisi expedita repell sunt nemo vitae
+                molestiae eum ad</span>
+
+            <% if(chafdata.length>0){%>
+
+                <div class="container col-9 ">
+                    <div class="row row-cols-sm-3">
+                        <% for(let j=0; j<chafdata.length; j++){%>
+                            <div class="col  Special">
+                                <div class="chef-img">
+                                    <img src="<%= chafdata[j].picture %>" alt="jkl">
+                                </div>
+
+                                <div class="text">
+                                    <samp>
+                                        <%=chafdata[j].chafname%>
+                                    </samp>
+                                </div>
+                                <label>
+                                    <%=chafdata[j].experience%>
+                                </label>
+                            </div>
+                            <%}%>
+                    </div>
+                </div>
+                <%} else{%>
+                    no found
+                    <%}%>
+
+        </div>
+
+        z
+
+        <!-- ********* subscribe ********** -->
+
+
+        <div class="container subscribe">
+            <p>Subscribe Our newsletter Updates</p>
+            <div class="row">
+                <div class="col subscribe-2">
+                    <form method="post" action="" class="sub-text">
+                        <input type="text" placeholder=" Enter your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ********* subscribe  end ********** -->
+
+        <%- include('./common/footer.ejs')%>
+
+
+</body>
+
+</html>

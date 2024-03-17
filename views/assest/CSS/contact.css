@@ -1,0 +1,44 @@
+.forms-1 {
+    display: flex;
+    justify-content:center;
+}
+.form-box {
+    max-width: 501px;
+    padding: 16px;
+}
+  
+input[type=text],[type=email] ,input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.textarea{
+    background: #f1f1f1;
+    border:none;
+    padding: 12px;
+    width: 466px;
+}
+.send {
+    width: 100%;
+    opacity: 0.9;
+    margin-top:10px;
+}
+.header h5{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    background: #24a201e2;
+    height: 70px;
+    color:#fff;
+    padding: 10px;
+}
+.image img {
+    height: 470px;
+}
+@media screen and (max-width:600px){
+    .textarea{
+        width: 316px;
+    }
+}

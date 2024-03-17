@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Payment checkout</title>
+    <link rel="stylesheet" href="./assest/CSS/payment.css">
+
+</head>
+
+<body>
+    <%- include('./common/header.ejs')%>
+        <div class="container-fluid box">
+
+            <div class="container col-lg-9  payment-box">
+                <div class="row">
+
+                    <!-- loaction payment -->
+                    <div class="col-12  col-sm-8 payment-text">
+                        <div class="all-box">
+                            <i class="fa-solid fa-user-tie"></i>
+
+                            <div class="text">
+                                <p>Account</p>
+                                <small>To place your order now, log in to your existing account or sign up. </small>
+
+                            </div>
+                        </div>
+                        <div class="all-box-1">
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div class="text-1">
+                                <p>Delivery address</p>
+
+                            </div>
+                        </div>
+                        <div class="all-box-1">
+                            <i class="fa-solid fa-wallet"></i>
+
+                            <div class="text-1">
+                                <p>Payment </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- **************************item informeation ******************8 -->
+                    <div class="col ">
+                        <div class="pay-prodeuct-box">
+                            <div class="pay-prodeuct">
+                                <div class="image">
+                                    <img src="./assest/img/parath (1).jpg" alt="" class="img-fluid">
+                                    <span>Madhu's Kitchen </span><br>
+                                    <samp>Pushpa</samp>
+                                </div><br>
+                                <div class="green-icon">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <small>paratha</small>
+                                    <abbr> - 1 +</abbr>
+                                    <text> ₹40 </text>
+
+                                    <div class="bill">
+                                        <h4>Bill Details</h4>
+                                        <div class="bill-pay">
+                                            <span>item Total</span>
+                                            <spa>₹40</spa><br>
+
+                                            <span>Delivery Fee | 0.8 kms !</span>
+                                            <spa>₹10</spa><br>
+
+                                            <hr>
+                                            <span>Delivery Tip</span>
+                                            <spa> Add tip</spa><br>
+                                            <span> Platform fee</span>
+                                            <spa><s>₹5.00</s> 4</spa><br>
+                                            <span>GST and Restaurant Charges</span>
+                                            <spa>₹12.29</spa>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <hr>
+                                <div class="to-pay">
+                                    <h3>To Pay</h3>
+                                    <h3>₹66</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

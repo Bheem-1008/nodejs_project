@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View cha's</title>
+</head>
+<body>
+    <%-include('./header.ejs')%>
+    <div class="conatner-fluid index">
+        <div class="h1">View Chaf's</div>
+        <div class="row">
+            <div class="col-md-4">
+                <%- include('./left.ejs')%>
+            </div>
+            <div class="col">
+                <% if(chafdata.length>0){%>
+                <table class="table table-bordered border-black table-sm">
+                    <thead>
+                        <tr>
+                            <th>chafname</th>
+                            <th>experience</th>
+                            <th>Chaf image</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <% for(let j=0; j<chafdata.length; j++){%>
+                            <tr>
+                                <td><%=chafdata[j].chafname%></td>
+                                <td><%=chafdata[j].experience%></td>
+                                <td><img src="<%= chafdata[j].picture %>" alt="" height="100px"></td>
+                                    
+                                <td>
+
+                                    <a class="edit" href="/edit_4/<%=chafdata[j]._id%>">edit</a>
+                                    <a class="delete" href="/delete_4/<%=chafdata[j]._id%>">Delete</a>
+
+                                </td>
+                            </tr>
+                            <%}%>
+                    </tbody>
+                </table>
+
+           <% } else {%>
+        no found
+        <%}%>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

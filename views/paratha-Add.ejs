@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Order Food online from india</title>
+    <link rel="stylesheet" href="./assest/CSS/add.css">
+</head>
+
+<body>
+    <%- include('./common/header.ejs')%>
+
+        <!-- fodd name and reating  -->
+        <div class="container col-lg-8 col-md-12 add-box">
+            <small>Home / Delhi / Madhu's Kitchen</small>
+
+            <div class="row">
+                <div class="col-8  col-sm-9">
+                    <div class="text">
+                        <p>Madhu's Kitchen</p>
+                        <span>India Rohini, 0.8 Km</span><br>
+                        <label><i class="fa-solid fa-motorcycle"></i> 0.8 km |
+                            ₹42 Delivery fee will apply</label>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="add-star">
+                        <i class="fa-solid fa-star"> 4.3</i>
+                        <hr>
+                        <small>50+ ratings</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fodd name and reating  1s-->
+
+        <div class="container col-lg-8 col-md-12  delevrery-box">
+            <div class="row">
+                <div class="col-12">
+                    <P>Recommended (10)</P>
+                </div>
+                <div class="col-8  col-sm-9">
+                    <div class="green-icon">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Madhu's Kitchen</p>
+                        ₹40<br>
+                        <b>North Indian, Indian Pushpanjali</b>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="delevery-img">
+                        <img src="./assest/img/parath (1).jpg" alt="" class="img-fluid">
+                        <div class="add-btn">
+                            <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal">ADD</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 2d -->
+        <div class="container col-lg-8 col-md-12  delevrery-box">
+
+            <div class="row ">
+                <div class="col-8  col-sm-9">
+                    <div class="green-icon">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Madhu's Kitchen</p>
+                        ₹100<br>
+                        <b>North Indian, Indian Pushpanjali</b>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="delevery-img">
+                        <img src="./assest/img/kec (2).jpg" alt="" class="img-fluid">
+                        <div class="add-btn">
+                            <a href="">ADD</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 3d -->
+        <div class="container col-lg-8 col-md-12  delevrery-box">
+
+            <div class="row ">
+                <div class="col-8  col-sm-9">
+                    <div class="green-icon">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Madhu's Kitchen</p>
+                        ₹200<br>
+                        <b>Kebabs, Biryani, Snacks Rohini Sec 14</b>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="delevery-img">
+                        <img src="./assest/img/parath (7).jpg" alt="" class="img-fluid">
+                        <div class="add-btn">
+                            <a href="">ADD</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 4th -->
+        <div class="container col-lg-8 col-md-12  delevrery-box">
+
+            <div class="row ">
+                <div class="col-8  col-sm-9">
+                    <div class="green-icon">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Madhu's Kitchen</p>
+                        ₹139<br>
+                        <b>North Indian, Chinese, Italian, Seafood, Paschim Vihar</b>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="delevery-img">
+                        <img src="./assest/img/paraths (3).jpg" alt="" class="img-fluid">
+                        <div class="add-btn">
+                            <a href="">ADD</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- add modal -->
+
+        <div class="modal " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                            <div class="green-icon">
+                                <i class="fa-solid fa-circle"></i>
+                                <span> Customize “Allu Paratha”</span><br>
+                                <d>₹40</d>
+                            </div>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Quantity</p>
+                        <div class="modal-icon">
+                            <i class="fa-solid fa-circle"></i>
+                            <input class="radio" type="radio" name="r1">
+                            <sp>Full ₹40</sp>
+                            <br>
+                            <i class="fa-solid fa-circle"></i>
+                            <input class="radio" type="radio" name="r1">
+                            <sp> Half ₹20</sp>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modal-view">
+                        money Full & Half
+                        <a href="/paratha-payment1" class="btn btn-success">VIEW CART</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+/* log in form */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.form-bo0x {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    outline: none;
+    font-size: 16px;
+}
+
+.signupbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 100%;
+    font-size: 17px;
+}
+.header h5{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    background: #24a201e2;
+    height: 70px;
+    color:#fff;
+    padding: 10px;
+}
+.image img {
+    height: 470px;
+}
